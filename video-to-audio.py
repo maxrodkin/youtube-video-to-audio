@@ -3,6 +3,7 @@
 import yt_dlp
 import os
 import shutil
+import sys
 
 def check_ffmpeg():
     """Check if FFmpeg is installed and available in PATH"""
@@ -34,5 +35,12 @@ def download_video(url):
         ydl.download([url])
 
 if __name__ == "__main__":
-    url = "https://youtu.be/ko70cExuzZM?si=ADZANbPudo9q1s4L"
+    if len(sys.argv) != 2:
+        print(f"Usage: python {os.path.basename(__file__)} <YouTube_URL>")
+        sys.exit(1)
+    url = sys.argv[1]
+    if not url.startswith("http"):
+        print("Error: Invalid URL.")
+        print(f"Usage: python {os.path.basename(__file__)} <YouTube_URL>")
+        sys.exit(1)
     download_video(url)

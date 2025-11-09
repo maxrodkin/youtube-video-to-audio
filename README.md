@@ -54,15 +54,15 @@ sudo apt install ffmpeg
 ## Usage
 
 ### Method 1: Edit the script
-1. Open `video-to-audio.py`
-2. Replace the URL in the script with your desired YouTube URL:
-   ```python
-   url = "https://youtu.be/YOUR_VIDEO_ID"
-   ```
-3. Run the script:
-   ```bash
-   python video-to-audio.py
-   ```
+1. Copy the YouTube video URL from your browser's address bar.
+2. Run the script with the URL as a parameter:
+    ```bash
+    python3 video-to-audio.py "https://www.youtube.com/watch?v=YOUR_VIDEO_ID"
+    ```
+3. Sample:
+    ```bash
+    python3 video-to-audio.py "https://www.youtube.com/watch?v=b7QlX3yR2xs"
+    ```
 
 ### Method 2: Command line (modify script for input)
 The script can be easily modified to accept command line arguments or user input.
