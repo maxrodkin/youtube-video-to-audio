@@ -1,0 +1,15 @@
+**Prompt:** "Create a Python script that downloads YouTube videos and converts them to MP3 audio files using yt-dlp. The script should:
+
+1. Use yt-dlp library for downloading (more reliable than pytube)
+2. Extract the best available audio quality
+3. Convert to MP3 format with 192kbps quality
+4. Save files to a 'downloads' folder with the video title as filename
+5. Include a main function that can be called with a YouTube URL
+
+Requirements to install:
+- `pip install yt-dlp`
+- `brew install ffmpeg` (on macOS) or equivalent FFmpeg installation
+
+The script should handle the download and conversion automatically in one step."
+
+This prompt will recreate the working video-to-audio conversion script using the more reliable yt-dlp library instead of the problematic pytube library.

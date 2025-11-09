@@ -1,0 +1,8 @@
+# Python dependencies
+yt-dlp>=2023.7.6
+
+# System dependencies (install separately):
+# FFmpeg is required for audio conversion
+# macOS: brew install ffmpeg
+# Ubuntu/Debian: sudo apt install ffmpeg
+# Windows: Download from https://ffmpeg.org/download.html
